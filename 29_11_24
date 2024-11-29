@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+struct cadastro {
+    char nome[50];
+    int idade;
+    char end[50];
+};
+
+
+int main() {
+    struct cadastro c;
+
+    fgets(c.nome, 50, stdin);
+    scanf("%d", &c.idade);
+    getchar();
+    fgets(c.end, 50, stdin);
+    
+    printf("\n\nNome: %s",c.nome);
+    printf("Idade: %d\n",c.idade);
+    printf("Endereco: %s\n",c.end);
+
+    return 0;
+}
